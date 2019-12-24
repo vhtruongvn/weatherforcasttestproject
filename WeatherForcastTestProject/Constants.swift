@@ -18,6 +18,7 @@ let kCountryName = "Singapore"
 // Forcast API
 //https://api.openweathermap.org/data/2.5/forecast?lat=1.303052&lon=103.836629&appid=3962ffa8c0a12cbe2bc27a120e602ee5&units=metric
 
+// To convert wind direction from degree to text
 enum WindDirection: String {
     case N
     case NNE
@@ -72,4 +73,59 @@ enum WindDirection: String {
             return .N
         }
     }
+}
+
+enum IconSize {
+    case small
+    case big
+}
+enum IconType: String {
+    case brokenClouds = "04"
+    case clearSky = "01"
+    case fewClouds = "02"
+    case mist = "50"
+    case rain = "10"
+    case scatteredClouds = "03"
+    case showerRain = "09"
+    case snow = "13"
+    case thunderstorm = "11"
+    
+    var name: String {
+        switch self {
+        case .brokenClouds:
+            return "Broken Clouds"
+        case .clearSky:
+            return "Clear Sky"
+        case .fewClouds:
+            return "Few Clouds"
+        case .mist:
+            return "Mist"
+        case .rain:
+            return "Rain"
+        case .scatteredClouds:
+            return "Scattered Clouds"
+        case .showerRain:
+            return "Shower Rain"
+        case .snow:
+            return "Snow"
+        case .thunderstorm:
+            return "Thunderstorm"
+        }
+    }
+    
+}
+
+// Weather icon mapping
+// For example, "04n"
+// >  04 = Broken Clouds
+// >  n  = (Night)
+func imageName(forIcon icon: String, size: IconSize) -> String {
+    guard let iconType = IconType(rawValue: String(icon.dropLast())) else {
+        return ""
+    }
+    
+    let sizeString = size == .small ? "60x60" : "100x100"
+    let periodOfTheDayString = icon.last == "d" ? "(Day)" : "(Night)"
+    
+    return sizeString + " " + iconType.name + " " + periodOfTheDayString
 }
