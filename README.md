@@ -22,7 +22,16 @@ require at least full iPhone support.
 
 ### Main Tasks
 * At Today tab, show the actual weather of Orchard, Singapore
+
+<p align="left" >
+<img src="toda_tab.png" width=530px>
+</p>
+
 * At Forcase tab, show the forecast of Orchard, Singapore
+
+<p align="left" >
+<img src="forecast_tab.png" width=530px>
+</p>
 
 ### Extra features
 * Geolocation for determining the current position of the device.
