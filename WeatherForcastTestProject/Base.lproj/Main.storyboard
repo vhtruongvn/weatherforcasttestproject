@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fJr-fn-y6k">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today-->
+        <scene sceneID="raY-Qd-6xb">
+            <objects>
+                <navigationController id="4au-OO-Y33" customClass="AppNavigationController" customModule="WeatherForcastTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Today" image="25x25 Today Active (Tab)" id="6ce-hH-xMm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WP9-mv-tGT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8Fm-kF-Ct0" kind="relationship" relationship="rootViewController" id="Lvc-yW-O9O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFR-02-IDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="-647"/>
+        </scene>
+        <!--Today View Controller-->
+        <scene sceneID="NW9-ho-M3y">
+            <objects>
+                <viewController id="8Fm-kF-Ct0" customClass="TodayViewController" customModule="WeatherForcastTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7nf-be-rAW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zdG-Mz-RMq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H4w-QK-W0x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zlX-GE-AL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-648"/>
+        </scene>
+        <!--Forecast-->
+        <scene sceneID="r7i-yi-BKm">
+            <objects>
+                <navigationController id="J76-54-j4J" customClass="AppNavigationController" customModule="WeatherForcastTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Forecast" image="25x25 Forecast Inactive (Tab)" id="u3h-HX-1XV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DHV-tj-Fqa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="at5-ym-nj3" kind="relationship" relationship="rootViewController" id="Isv-Mk-zWJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRj-bv-tF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="105"/>
+        </scene>
+        <!--Forecast View Controller-->
+        <scene sceneID="66H-vc-c1O">
+            <objects>
+                <viewController id="at5-ym-nj3" customClass="ForecastViewController" customModule="WeatherForcastTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gd9-of-yLc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7O3-C6-jrW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="15o-RT-wh4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ll2-CC-6UT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="104"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9Wi-H9-0n8">
+            <objects>
+                <tabBarController id="fJr-fn-y6k" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lRz-vF-mSM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4au-OO-Y33" kind="relationship" relationship="viewControllers" id="SeD-GB-dS7"/>
+                        <segue destination="J76-54-j4J" kind="relationship" relationship="viewControllers" id="fRC-72-d4V"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Tf-IS-plL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-832" y="-283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="25x25 Forecast Inactive (Tab)" width="25" height="25"/>
+        <image name="25x25 Today Active (Tab)" width="25" height="25"/>
+    </resources>
+</document>

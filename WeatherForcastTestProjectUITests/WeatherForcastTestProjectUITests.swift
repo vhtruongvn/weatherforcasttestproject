@@ -2,7 +2,6 @@
 //  WeatherForcastTestProjectUITests.swift
 //  WeatherForcastTestProjectUITests
 //
-//  Created by Truong Vo on 12/24/19.
 //  Copyright © 2019 Buuuk. All rights reserved.
 //
 
