@@ -24,7 +24,7 @@ require at least full iPhone support.
 * At Today tab, show the actual weather of Orchard, Singapore
 
 <p align="left" >
-<img src="toda_tab.png" width=530px>
+<img src="today_tab.png" width=530px>
 </p>
 
 * At Forcase tab, show the forecast of Orchard, Singapore
