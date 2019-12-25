@@ -34,9 +34,9 @@ require at least full iPhone support.
 </p>
 
 ### Extra features
-* Geolocation for determining the current position of the device.
-* API provided error messages.
+* Pull to refresh.
+* Choosing units between metric and imperial.
 
 ### Features that could be implemented
-* i18n
-* Choosing units between metric and imperial
+* Geolocation for determining the current position of the device.
+* Reload weather data every 5 mins.

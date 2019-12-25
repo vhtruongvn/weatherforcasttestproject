@@ -11,12 +11,13 @@ let kLatitude = 1.303052
 let kLongitude = 103.836629
 let kCityName = "Orchard"
 let kCountryName = "Singapore"
+let kOWMAPIKey = "a10c2c0052b31bf0977c78f522479ce5"
 
 // Today weather API
-//https://api.openweathermap.org/data/2.5/weather?lat=1.303052&lon=103.836629&appid=3962ffa8c0a12cbe2bc27a120e602ee5&units=metric
+//https://api.openweathermap.org/data/2.5/weather?lat=1.303052&lon=103.836629&appid=a10c2c0052b31bf0977c78f522479ce5&units=metric
 
 // Forcast API
-//https://api.openweathermap.org/data/2.5/forecast?lat=1.303052&lon=103.836629&appid=3962ffa8c0a12cbe2bc27a120e602ee5&units=metric
+//https://api.openweathermap.org/data/2.5/forecast?lat=1.303052&lon=103.836629&appid=a10c2c0052b31bf0977c78f522479ce5&units=metric
 
 // To convert wind direction from degree to text
 enum WindDirection: String {

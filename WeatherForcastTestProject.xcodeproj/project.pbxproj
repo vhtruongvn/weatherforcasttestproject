@@ -17,7 +17,7 @@
 		8FAA251523B2567E00552369 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAA251423B2567E00552369 /* ForecastViewController.swift */; };
 		8FAA251723B256FA00552369 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAA251623B256FA00552369 /* AppNavigationController.swift */; };
 		8FAA251923B2588100552369 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAA251823B2588100552369 /* AppTabBarController.swift */; };
-		8FAA251B23B25C7100552369 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAA251A23B25C7100552369 /* Constants.swift */; };
+		8FAA251B23B25C7100552369 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAA251A23B25C7100552369 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		8FAA251423B2567E00552369 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		8FAA251623B256FA00552369 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		8FAA251823B2588100552369 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
-		8FAA251A23B25C7100552369 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8FAA251A23B25C7100552369 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 				8FAA251623B256FA00552369 /* AppNavigationController.swift */,
 				8FAA251223B2567000552369 /* TodayViewController.swift */,
 				8FAA251423B2567E00552369 /* ForecastViewController.swift */,
-				8FAA251A23B25C7100552369 /* Constants.swift */,
+				8FAA251A23B25C7100552369 /* Helper.swift */,
 				8FAA250F23B2507300552369 /* Main.storyboard */,
 				8FAA24E323B22BD800552369 /* LaunchScreen.storyboard */,
 				8FAA24DE23B22BD800552369 /* Assets.xcassets */,
@@ -273,7 +273,7 @@
 				8FAA24D923B22BD500552369 /* AppDelegate.swift in Sources */,
 				8FAA251923B2588100552369 /* AppTabBarController.swift in Sources */,
 				8FAA251523B2567E00552369 /* ForecastViewController.swift in Sources */,
-				8FAA251B23B25C7100552369 /* Constants.swift in Sources */,
+				8FAA251B23B25C7100552369 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
